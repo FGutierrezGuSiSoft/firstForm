@@ -1,0 +1,18 @@
+version: '3.6'
+
+services:
+  first-form:
+    container_name: first-form
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - './src:/usr/src/app'
+      - './htmls:/usr/src/app/project/templates'
+      - './public:/usr/src/app/project/public'
+    ports:
+      - 5001:5000
+    environment:
+      - FLASK_ENV=development
+      - FLASK_APP=manage.py
+      - SECRET_KEY=secret_key

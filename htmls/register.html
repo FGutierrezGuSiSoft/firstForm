@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Ingresar</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="login">
+      <div class="card">
+        <header>
+          <h3>Registrarse</h3>
+        </header>
+        <form method="POST" action="/register">
+          <div class="line">
+            <label>Nombre y Apellido</label>
+            <input class="fullWidth textInput" type="text" name="name"  />
+          </div>
+
+          <div class="line">
+            <label>Correo</label>
+            <input class="fullWidth textInput" type="email" name="email"  />
+          </div>
+
+          <div class="line">
+            <label>Password</label>
+            <input class="fullWidth textInput" type="password" name="password"  />
+          </div>
+
+          <div class="line">
+            <label>Confirmación de Password</label>
+            <input class="fullWidth textInput" type="password" name="confirmation"  />
+          </div>
+
+          <div class="line centered">
+            <input class="submit" type="submit" value="Registrarse" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer>
+    </footer>
+  </body>
+</html>
